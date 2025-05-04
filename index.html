@@ -148,6 +148,16 @@
             <p class="last-smile">:)</p>
         </div>
     </div>
+<script>
+  window.addEventListener('click', function() {
+    const audio = document.querySelector('.song');
+    if (audio) {
+      audio.play().catch(e => {
+        console.log("Autoplay failed: ", e);
+      });
+    }
+  }, { once: true });
+</script>
 
 </body>
     <!-- Greensock -->
